@@ -127,7 +127,7 @@ fun WelcomeScreen(
             .background(MaterialTheme.colorScheme.surface)
 
     ) {
-        Box(modifier = Modifier.fillMaxSize().blur(25.dp)){
+        Box(modifier = Modifier.fillMaxSize().blur(200.dp)){
             AnimatedBackground(animationPaused = animationPaused)
         }
         Text(

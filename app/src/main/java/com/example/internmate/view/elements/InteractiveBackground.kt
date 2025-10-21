@@ -17,7 +17,7 @@ private data class Circles(
     val positionY: Float  // The Y position as a fraction of screen height
 )
 @Composable
-fun StaticBackground(
+fun InteractiveBackground(
     pagerState: PagerState,
     colors: List<Color> = listOf(
         Color(0xFF9849F1), // Dark purple (from text/icon)

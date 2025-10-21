@@ -19,6 +19,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "API_KEY", "\"AIzaSyCWw055jJYioq-ldAfulIq1JbKCVfAty3I\"")
+        android.buildFeatures.buildConfig = true
     }
 
     buildTypes {
@@ -78,4 +80,9 @@ dependencies {
     //Google Credential Manager
     implementation("androidx.credentials:credentials:1.5.0")
     implementation("androidx.credentials:credentials-play-services-auth:1.5.0")
+
+    //Gemini Integration
+    implementation("com.google.ai.client.generativeai:generativeai:0.9.0")
+
+    implementation("com.airbnb.android:lottie-compose:6.6.10")
 }

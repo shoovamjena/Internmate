@@ -97,7 +97,7 @@ import com.example.internmate.data.UserPreferencesRepository
 import com.example.internmate.ui.theme.inspDoc
 import com.example.internmate.ui.theme.romalio
 import com.example.internmate.view.elements.AnimatedBackground
-import com.example.internmate.view.elements.StaticBackground
+import com.example.internmate.view.elements.InteractiveBackground
 import com.example.internmate.view.elements.authcomponents.LoginContent
 import com.example.internmate.view.elements.authcomponents.SignUpContent
 import com.example.internmate.viewmodel.AuthViewModel
@@ -235,8 +235,8 @@ fun OnboardingScreens(
 
     Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
         // Blurred Background
-        Box(modifier = Modifier.matchParentSize().blur(25.dp)) {
-            if(!visible) StaticBackground(pagerState) else AnimatedBackground(animationPaused = false)
+        Box(modifier = Modifier.matchParentSize().blur(200.dp)) {
+            if(!visible) InteractiveBackground(pagerState) else AnimatedBackground(animationPaused = false)
         }
 
         Column(

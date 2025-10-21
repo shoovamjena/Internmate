@@ -21,6 +21,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.internmate.data.UserPreferencesRepository
 import com.example.internmate.view.screens.HomeScreen
+import com.example.internmate.view.screens.MainScreen
 import com.example.internmate.view.screens.OnboardingScreens
 import com.example.internmate.view.screens.WelcomeScreen
 import com.example.internmate.viewmodel.AuthViewModel
@@ -62,7 +63,7 @@ fun AppNavHost() {
                 OnboardingScreens(navController, userPreferencesRepository)
             }
             composable("home") {
-                HomeScreen(navController, userPreferencesRepository)
+                MainScreen(context,navController,userPreferencesRepository)
             }
         }
     } else {
